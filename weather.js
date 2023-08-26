@@ -6,7 +6,7 @@ const search = document.querySelector(".searchBtn");
 const getWeather = async (cityName) => {
   try {
     const res = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=0a77f6db1f0dff6d5eea0e1598459bec&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=xxxxxxxx&units=metric` //use your own API key
     );
     console.log(res.data);
     if (res.status == 404) {
